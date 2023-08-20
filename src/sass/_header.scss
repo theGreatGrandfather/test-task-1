@@ -121,7 +121,7 @@
         background-color: $color-black;
     }
     &:focus-within>svg{
-        transform: rotate(180deg);
+        transform: rotate(90deg);
     }
 }
 .contacts__address-phone-list {
@@ -131,6 +131,8 @@
     position: absolute;
     top: 100%;
     left: 0;
+    padding: 1vw;
+    
 }
 .contacts__address-phone-item {
 }
@@ -167,6 +169,9 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+    .sosial__list{
+        margin: 0;
     }
     .header__logo{
         order: 0;
@@ -206,10 +211,13 @@
     }
     .sosial__link {
         &>svg{
-            width: 8vw;
+            width: 6vw;
         }
     }
     .header__logo>svg{
         max-width: 20vw;
+    }
+    .contacts__address-phone-list {
+        width: 101%;
     }
 }
