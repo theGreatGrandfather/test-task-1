@@ -88,6 +88,7 @@
 }
 .contacts__address-main {
     display: flex;
+    align-items: center;
     gap: 1vw;
     white-space: nowrap;
 }
@@ -167,20 +168,24 @@
     &>svg{
         width: 5vw;
     }
-    &:hover>svg,&:focus>svg{
-        transform: scale(1.2);
-    }
 }
 }
 @media screen and (max-width: 425px){
     .contacts__address-phone{
-        font-size:1.6vh;
+        font-size:2vh;
     }
     .nav__link{
         
-        font-size:1vh;
+        font-size:12px;
         padding: 1vh;
         
     }
-    
+    .sosial__link {
+        &>svg{
+            width: 8vw;
+        }
+    }
+    .header__logo>svg{
+        max-width: 20vw;
+    }
 }
