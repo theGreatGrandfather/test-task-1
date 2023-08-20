@@ -44,7 +44,7 @@ $color-black: #333;
 $color-logo:#FFE30B;
 $color-yellow: #FFD00E;
 $color-green: #50AB09;
-
+$bgc:#FFFEFC;
 $color_accent: #5d20c7;
 $transition__stock: all 300ms linear;
 
@@ -55,6 +55,7 @@ font-weight: 400;
 // background-color:
 scrollbar-width: thin; 
 color: $color-black;
+background-color: $bgc;
 
  
 }

@@ -85,6 +85,7 @@
     line-height: 125%;
 }
 .contacts__list {
+    position: relative;
 }
 .contacts__address-main {
     display: flex;
@@ -99,6 +100,10 @@
     font-weight: 700;
     line-height: 125%;
     white-space: nowrap;
+    transition: $transition__stock;
+    &:hover, &:focus{
+        color: $color-yellow;
+    }
 }
 .contacts__address-phone-main {
 }
@@ -108,12 +113,31 @@
     align-items: center;
     background-color: transparent;
     border: none;
+    border-radius: 50%;
     padding: 0;
+    transition: $transition__stock;
+    &:hover>svg,&:focus>svg{
+        fill: $color-yellow;
+        background-color: $color-black;
+    }
+    &:focus-within>svg{
+        transform: rotate(180deg);
+    }
 }
 .contacts__address-phone-list {
     display: none;
+    background-color: $bgc;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
 }
 .contacts__address-phone-item {
+}
+
+.contacts__address__btn:focus-within ~ .contacts__address-phone-list {
+    display: flex;
+    z-index: 1;
 }
 
 @media screen and (max-width: 1440px){
