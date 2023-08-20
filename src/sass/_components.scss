@@ -11,3 +11,22 @@
     padding-right: 4vw;
 }
 
+@media screen and (max-width: 1440px){
+    // ._container{
+    //     padding-left: 2vw;
+    //     padding-right: 2vw;
+    // }
+}
+@media screen and (max-width: 1280px){
+    ._container{
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+}
+@media screen and (max-width: 1024px){
+    ._section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+}
+@media screen and (max-width: 768px){}

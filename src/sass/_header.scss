@@ -6,6 +6,7 @@
 .header__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 ._container {
 }
@@ -42,7 +43,7 @@
     color: $color-black;
     padding-left: 2vw;
     padding-right: 2vw;
-    font-size: 20px;
+    font-size:2vh;
     font-style: normal;
     font-weight: 600;
     line-height: 125%;
@@ -78,7 +79,7 @@
     margin-left: 2vw;
 }
 .contacts__time {
-    font-size: 16px;
+    font-size: 1.5vh;
     font-style: normal;
     font-weight: 400;
     line-height: 125%;
@@ -92,7 +93,7 @@
 }
 .contacts__address-phone {
     display: flex;
-    font-size: 26px;
+    font-size:2.6vh;
     font-style: normal;
     font-weight: 700;
     line-height: 125%;
@@ -112,4 +113,74 @@
     display: none;
 }
 .contacts__address-phone-item {
+}
+
+@media screen and (max-width: 1440px){
+    .nav {
+        margin-left: 6vw;
+    }
+    // .nav__link{
+    //     font-size: 18px;
+    // }
+    // .contacts__time {
+    //     font-size: 14px;
+    // }
+    // .contacts__address-phone{
+    //     font-size: 22px;
+    // }
+    .sosial__list{
+        margin-left: 4vw;
+    }
+}
+@media screen and (max-width: 1023px){
+    .header__section._section{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    }
+    .header__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .header__logo{
+        order: 0;
+        
+    }
+    .header__logo>svg{
+        max-width: 25vw;
+    }
+    .sosial__list{
+        gap: 3vw;
+        order: 1;
+    }
+    .contacts__address-container{
+        order: 4;
+    }
+    .nav{
+        margin-top: 1vh;
+        order: 6;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sosial__link {
+    &>svg{
+        width: 5vw;
+    }
+    &:hover>svg,&:focus>svg{
+        transform: scale(1.2);
+    }
+}
+}
+@media screen and (max-width: 425px){
+    .contacts__address-phone{
+        font-size:1.6vh;
+    }
+    .nav__link{
+        
+        font-size:1vh;
+        padding: 1vh;
+        
+    }
+    
 }
