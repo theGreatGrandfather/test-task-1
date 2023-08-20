@@ -1,0 +1,115 @@
+.header__section._section{
+    padding-top: 16px;
+    padding-bottom: 17px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+._container {
+}
+.header__logo>svg{
+    transition: $transition__stock;
+    max-width: 14vw;
+    &:hover,&:focus{
+        transform: scale(1.2);
+    }
+}
+._link {
+}
+.nav {
+    margin-left: 8vw;
+}
+.nav__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__item {
+    &:not(:last-of-type){
+        border-right: 1px solid rgba(51, 51, 51, 0.1);
+        
+    }
+}
+._list {
+}
+.nav__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    color: $color-black;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    transition: $transition__stock;
+    &:hover,&:focus{
+        color: $color-yellow;
+        transform: scale(1.2);
+    }
+        
+}
+.sosial__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    margin-left: 6vw;
+}
+.sosial__item {
+}
+.sosial__link {
+    transition: $transition__stock;
+    &>svg{
+        transition: $transition__stock;
+        width: 1.7vw;
+    }
+    &:hover>svg,&:focus>svg{
+        transform: scale(1.2);
+    }
+}
+.contacts__address-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+.contacts__time {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+}
+.contacts__list {
+}
+.contacts__address-main {
+    display: flex;
+    gap: 1vw;
+    white-space: nowrap;
+}
+.contacts__address-phone {
+    display: flex;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    white-space: nowrap;
+}
+.contacts__address-phone-main {
+}
+.contacts__address__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.contacts__address-phone-list {
+    display: none;
+}
+.contacts__address-phone-item {
+}
