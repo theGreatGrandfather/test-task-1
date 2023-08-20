@@ -199,6 +199,12 @@
     }
 }
 }
+@media screen and (max-width: 768px){
+    .contacts__address__btn:hover ~ .contacts__address-phone-list {
+    display: flex;
+    z-index: 1;
+}
+}
 @media screen and (max-width: 425px){
     .contacts__address-phone{
         font-size:2vh;
