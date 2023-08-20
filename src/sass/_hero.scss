@@ -62,6 +62,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 125%;
+    color: $color-black;
     transition: $transition__stock;
     margin-bottom: 343px;
     white-space: nowrap;
@@ -117,6 +118,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 125%;
+    
 }
 .hero__bottom__btn{
     display: flex;
@@ -127,6 +129,7 @@
     background-color: transparent;
     border: none;
     height: auto;
+    color: $color-black;
     transition: $transition__stock;
     &>svg{
         width: 1vw;
@@ -275,5 +278,10 @@ input[name="slider"] {
     }
     .slide__btn{
         font-size: 16px;
+    }
+    .hero__bottom__btn{
+        &>svg{
+            width: 2vw;
+        }
     }
 }
