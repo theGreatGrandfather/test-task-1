@@ -69,7 +69,7 @@
     }
     .adventages__left-side {
         position: relative;
-        max-width: 90vw;
+        max-width: 100vw;
         flex: 1 0 100%;
         &::before{
             content: ' ';
@@ -85,6 +85,9 @@
             background-repeat: no-repeat;
             background-position: center;
         }
+    }
+    .adventages__text {
+        font-size: 2.2vh;
     }
 }
 @media screen and (max-width: 768px){}
